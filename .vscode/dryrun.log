@@ -1,5 +1,8 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory '/home/ratan/devel/c/sturdy-octo-doodle'
-make: Nothing to be done for 'all'.
+gcc -c main.c splash.c levelselector.c -I/usr/local/includ -g -Wall
+gcc -c main.c splash.c levelselector.c -I/usr/local/includ -g -Wall
+gcc -c main.c splash.c levelselector.c -I/usr/local/includ -g -Wall
+gcc -o game main.o splash.o levelselector.o -L/usr/local/lib -lallegro_font -lallegro_ttf -lallegro_image -lallegro_primitives -lallegro
 make: Leaving directory '/home/ratan/devel/c/sturdy-octo-doodle'
  

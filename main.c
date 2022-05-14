@@ -3,9 +3,12 @@
 #include <allegro5/allegro_image.h>
 #include <allegro5/allegro_primitives.h>
 #include <allegro5/allegro_ttf.h>
+#include <stdio.h>
 
 #include "conf.h"
 #include "splash.h"
+#include "levelselector.h"
+
 
 int main()
 {
@@ -15,7 +18,7 @@ int main()
     al_init_primitives_addon();
     al_init_ttf_addon();
     
-
+    int current_level = 0;
     ALLEGRO_EVENT_QUEUE* queue = al_create_event_queue();
     ALLEGRO_TIMER* timer = al_create_timer(1.0 / 30.0);
     ALLEGRO_DISPLAY* disp = al_create_display(SCREEN_WIDTH, SCREEN_HEIGHT);
@@ -36,7 +39,12 @@ int main()
     al_start_timer(timer);
     float x=0;
 
-    load_splash_screen(queue);
+    load_splash_screen(queue);  /* SPLASH SCREEN */
+
+    current_level = select_level(); /* LEVEL SELECTOR */
+
+    printf("LEVEL = %d\n", current_level);/* LOAD LEVEL */
+    
 
     while(1) {
         al_wait_for_event(queue, &event);

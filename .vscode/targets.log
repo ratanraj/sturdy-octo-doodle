@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat May 14 11:53:54 2022
+# Make data base, printed on Sat May 14 13:26:23 2022
 
 # Variables
 
@@ -21,7 +21,7 @@ DESKTOP_SESSION = ubuntu
 # default
 .SHELLFLAGS := -c
 # makefile (from 'Makefile', line 5)
-OBJ = main.o splash.o
+OBJ = main.o splash.o levelselector.o
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -71,7 +71,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # environment
 USERNAME = ratan
 # makefile (from 'Makefile', line 4)
-SOURCES = main.c splash.c
+SOURCES = main.c splash.c levelselector.c
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
@@ -190,6 +190,7 @@ MAKE_COMMAND := make
 *F = $(notdir $*)
 # environment
 LANGUAGE = en_IN:en
+ 
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-1892dced-1.67.0-main.sock
 # makefile
@@ -235,7 +236,7 @@ LANG = C
 # environment
 VSCODE_PID = 659525
 # variable set hash-table stats:
-# Load=112/1024=11%, Rehash=0, Collisions=17/141=12%
+# Load=112/1024=11%, Rehash=0, Collisions=17/147=12%
 
 # Pattern-specific Variable Values
 
@@ -243,9 +244,9 @@ VSCODE_PID = 659525
 
 # Directories
 
-# . (device 64769, inode 9583375): 17 files, no impossibilities.
+# . (device 64769, inode 9583375): 20 files, no impossibilities.
 
-# 17 files, no impossibilities in 1 directories.
+# 20 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -253,13 +254,22 @@ VSCODE_PID = 659525
 
 # Files
 
+levelselector.o: main.c splash.c levelselector.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 19):
+	$(CC) -c $(SOURCES) $(CFLAGS)
+
 all: game
 #  Phony target (prerequisite of .PHONY).
 #  Command line target.
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
 
 .PHONY: all clean
 #  Implicit rule search has not been done.
@@ -269,27 +279,39 @@ all: game
 # Not a target:
 main.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-14 11:51:06.779903428
+#  Last modified 2022-05-14 13:25:56.58828662
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-14 11:52:46.326544713
+#  Last modified 2022-05-14 13:26:21.744591121
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 splash.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-14 11:52:02.011144452
+#  Last modified 2022-05-14 13:02:33.403066851
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+levelselector.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 13:25:11.403707106
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 .DEFAULT:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -302,44 +324,64 @@ clean:
 #  recipe to execute (from 'Makefile', line 13):
 	$(RM) *~ *.o $(TARGET)
 
-game: main.o splash.o
+game: main.o splash.o levelselector.o
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-14 11:52:50.218492409
+#  Last modified 2022-05-14 13:02:35.875046591
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
 #  recipe to execute (from 'Makefile', line 16):
 	$(CC) -o $(TARGET) $(OBJ) $(LDFLAGS)
 
-main.o: main.c splash.c
+main.o: main.c splash.c levelselector.c
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-14 11:52:50.146493375
+#  Implicit/static pattern stem: ''
+#  Last modified 2022-05-14 13:02:35.799047214
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := main.o
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := main.c splash.c levelselector.c
+# automatic
+# | := 
+# automatic
+# < := main.c
+# automatic
+# ^ := main.c splash.c levelselector.c
+# automatic
+# ? := main.c levelselector.c
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=3/14=21%
 #  recipe to execute (from 'Makefile', line 19):
 	$(CC) -c $(SOURCES) $(CFLAGS)
 
-splash.o: main.c splash.c
+splash.o: main.c splash.c levelselector.c
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-14 11:52:50.182492892
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 19):
 	$(CC) -c $(SOURCES) $(CFLAGS)
 
 # files hash-table stats:
-# Load=11/1024=1%, Rehash=0, Collisions=0/34=0%
+# Load=13/1024=1%, Rehash=0, Collisions=0/40=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 24 / storage = 201 B / avg = 8 B
-# current buf: size = 8162 B / used = 201 B / count = 24 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 28 / storage = 260 B / avg = 9 B
+# current buf: size = 8162 B / used = 260 B / count = 28 / avg = 9 B
 
-# strcache performance: lookups = 47 / hit rate = 48%
+# strcache performance: lookups = 55 / hit rate = 49%
 # hash-table stats:
-# Load=24/8192=0%, Rehash=0, Collisions=1/47=2%
-# Finished Make data base on Sat May 14 11:53:54 2022
+# Load=28/8192=0%, Rehash=0, Collisions=1/55=2%
+# Finished Make data base on Sat May 14 13:26:23 2022
 
  
