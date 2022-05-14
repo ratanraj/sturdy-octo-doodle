@@ -14,6 +14,7 @@ int main()
 {
     al_init();
     al_install_keyboard();
+    al_install_mouse();
     al_init_image_addon();
     al_init_primitives_addon();
     al_init_ttf_addon();
@@ -28,6 +29,7 @@ int main()
 
 
     al_register_event_source(queue, al_get_keyboard_event_source());
+    al_register_event_source(queue, al_get_mouse_event_source());
     al_register_event_source(queue, al_get_display_event_source(disp));
     al_register_event_source(queue, al_get_timer_event_source(timer));
 
@@ -41,7 +43,7 @@ int main()
 
     load_splash_screen(queue);  /* SPLASH SCREEN */
 
-    current_level = select_level(); /* LEVEL SELECTOR */
+    current_level = select_level(queue); /* LEVEL SELECTOR */
 
     printf("LEVEL = %d\n", current_level);/* LOAD LEVEL */
     

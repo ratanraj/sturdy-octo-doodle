@@ -1,6 +1,7 @@
 {
     "makefile.extensionOutputFolder": "./.vscode",
     "files.associations": {
-        "map": "c"
+        "map": "c",
+        "allegro_primitives.h": "c"
     }
 }
