@@ -4,6 +4,8 @@
 #include "conf.h"
 
 void draw_level_grid() {
+    int i;
+
     al_draw_rectangle(
         100,
         100, 
@@ -11,6 +13,16 @@ void draw_level_grid() {
         SCREEN_HEIGHT-100,
         al_map_rgb(255, 255, 255),
         5);
+    
+    for(i=0;i<5;i++) {
+        al_draw_rectangle(
+        200 + i*100 + 88,
+        300, 
+        200 + i*100 + 180, 
+        400,
+        al_map_rgb(255, 255, 255),
+        2);
+    }
 }
 
 int select_level(ALLEGRO_EVENT_QUEUE* queue) 

@@ -1,4 +1,4 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/ratan/devel/c/sturdy-octo-doodle'
 gcc -c main.c splash.c levelselector.c -I/usr/local/includ -g -Wall
 gcc -c main.c splash.c levelselector.c -I/usr/local/includ -g -Wall

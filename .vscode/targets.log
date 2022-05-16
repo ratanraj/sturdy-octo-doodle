@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat May 14 13:26:23 2022
+# Make data base, printed on Mon May 16 12:33:48 2022
 
 # Variables
 
@@ -57,7 +57,7 @@ _ = /usr/share/code/code
 # makefile (from 'Makefile', line 2)
 CFLAGS = -I/usr/local/includ -g -Wall
 # environment
-JOURNAL_STREAM = 8:67100
+JOURNAL_STREAM = 8:67519
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -79,7 +79,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 2718
+MANAGERPID = 3057
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -91,7 +91,7 @@ PATH = /home/ratan/.local/bin:/home/ratan/bin:/home/ratan/.nvm/versions/node/v17
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/ratan:@/tmp/.ICE-unix/2960,unix/ratan:/tmp/.ICE-unix/2960
+SESSION_MANAGER = local/ratan:@/tmp/.ICE-unix/3313,unix/ratan:/tmp/.ICE-unix/3313
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -103,7 +103,7 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 53158b6143004d5ea874cfe990a9360b
+INVOCATION_ID = 7982aeb068ff43e4a6f10edbd77971d2
 # makefile (from 'Makefile', line 3)
 LDFLAGS = -L/usr/local/lib -lallegro_font -lallegro_ttf -lallegro_image -lallegro_primitives -lallegro
 # default
@@ -115,7 +115,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 659525
+GIO_LAUNCHED_DESKTOP_FILE_PID = 15862
 # environment
 JDK_HOME = /opt/jdk
 # automatic
@@ -129,7 +129,7 @@ PWD = /home/ratan/devel/c/sturdy-octo-doodle
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 2922
+SSH_AGENT_PID = 3275
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -143,7 +143,7 @@ GNANA_CLIENT_ENV = /home/ratan/devel/aviso/python_sdk_venv
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
-VSCODE_CODE_CACHE_PATH = /home/ratan/.config/Code/CachedData/57fd6d0195bb9b9d1b49f6da5db789060795de47
+VSCODE_CODE_CACHE_PATH = /home/ratan/.config/Code/CachedData/da15b6fd3ef856477bf6f4fb29ba1b7af717770d
 # environment
 LOGNAME = ratan
 # environment
@@ -171,7 +171,7 @@ CC = gcc
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-858607de-e1b3-440f-8e89-4528704b612f.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-bab83c5b-df84-4041-a156-7664c5813442.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -190,9 +190,8 @@ MAKE_COMMAND := make
 *F = $(notdir $*)
 # environment
 LANGUAGE = en_IN:en
- 
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-1892dced-1.67.0-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-1892dced-1.67.1-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -234,7 +233,7 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LANG = C
 # environment
-VSCODE_PID = 659525
+VSCODE_PID = 15862
 # variable set hash-table stats:
 # Load=112/1024=11%, Rehash=0, Collisions=17/147=12%
 
@@ -244,9 +243,9 @@ VSCODE_PID = 659525
 
 # Directories
 
-# . (device 64769, inode 9583375): 20 files, no impossibilities.
+# . (device 64769, inode 9583375): 17 files, no impossibilities.
 
-# 20 files, no impossibilities in 1 directories.
+# 17 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -279,7 +278,8 @@ all: game
 # Not a target:
 main.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-14 13:25:56.58828662
+#  Last modified 2022-05-14 13:56:42.857825759
+ 
 #  File has been updated.
 #  Successfully updated.
 
@@ -306,7 +306,7 @@ splash.c:
 # Not a target:
 levelselector.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-14 13:25:11.403707106
+#  Last modified 2022-05-14 14:46:13.007627624
 #  File has been updated.
 #  Successfully updated.
 
@@ -326,7 +326,7 @@ clean:
 
 game: main.o splash.o levelselector.o
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-14 13:02:35.875046591
+#  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
@@ -337,7 +337,7 @@ game: main.o splash.o levelselector.o
 main.o: main.c splash.c levelselector.c
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: ''
-#  Last modified 2022-05-14 13:02:35.799047214
+#  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # automatic
@@ -355,7 +355,7 @@ main.o: main.c splash.c levelselector.c
 # automatic
 # ^ := main.c splash.c levelselector.c
 # automatic
-# ? := main.c levelselector.c
+# ? := main.c splash.c levelselector.c
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=3/14=21%
 #  recipe to execute (from 'Makefile', line 19):
@@ -379,9 +379,9 @@ splash.o: main.c splash.c levelselector.c
 # strcache buffers: 1 (0) / strings = 28 / storage = 260 B / avg = 9 B
 # current buf: size = 8162 B / used = 260 B / count = 28 / avg = 9 B
 
-# strcache performance: lookups = 55 / hit rate = 49%
+# strcache performance: lookups = 52 / hit rate = 46%
 # hash-table stats:
-# Load=28/8192=0%, Rehash=0, Collisions=1/55=2%
-# Finished Make data base on Sat May 14 13:26:23 2022
+# Load=28/8192=0%, Rehash=0, Collisions=1/52=2%
+# Finished Make data base on Mon May 16 12:33:48 2022
 
  
