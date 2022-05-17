@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS=-I/usr/local/includ -g -Wall
-LDFLAGS=-L/usr/local/lib -lallegro_font -lallegro_ttf -lallegro_image -lallegro_primitives -lallegro
+LDFLAGS=-L/usr/local/lib -lallegro_font -lallegro_ttf -lallegro_image -lallegro_primitives -lallegro -ljson-c
 SOURCES=main.c splash.c levelselector.c levels.c
 OBJ=main.o splash.o levelselector.o levels.o
 TARGET=game

@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue May 17 02:10:46 2022
+# Make data base, printed on Wed May 18 00:49:33 2022
 
 # Variables
 
@@ -31,6 +31,7 @@ VSCODE_LOG_NATIVE = false
 # makefile (from 'Makefile', line 6)
 TARGET = game
 # environment
+ 
 NVM_INC = /home/ratan/.nvm/versions/node/v17.3.0/include/node
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
@@ -57,7 +58,7 @@ _ = /usr/share/code/code
 # makefile (from 'Makefile', line 2)
 CFLAGS = -I/usr/local/includ -g -Wall
 # environment
-JOURNAL_STREAM = 8:67519
+JOURNAL_STREAM = 8:64370
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -79,7 +80,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 3057
+MANAGERPID = 2898
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -91,7 +92,7 @@ PATH = /home/ratan/.local/bin:/home/ratan/bin:/home/ratan/.nvm/versions/node/v17
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/ratan:@/tmp/.ICE-unix/3313,unix/ratan:/tmp/.ICE-unix/3313
+SESSION_MANAGER = local/ratan:@/tmp/.ICE-unix/3138,unix/ratan:/tmp/.ICE-unix/3138
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -103,9 +104,9 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 7982aeb068ff43e4a6f10edbd77971d2
+INVOCATION_ID = a45fa6eb244a46cd84b1f80c337b25d3
 # makefile (from 'Makefile', line 3)
-LDFLAGS = -L/usr/local/lib -lallegro_font -lallegro_ttf -lallegro_image -lallegro_primitives -lallegro
+LDFLAGS = -L/usr/local/lib -lallegro_font -lallegro_ttf -lallegro_image -lallegro_primitives -lallegro -ljson-c
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -115,7 +116,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 15862
+GIO_LAUNCHED_DESKTOP_FILE_PID = 14855
 # environment
 JDK_HOME = /opt/jdk
 # automatic
@@ -129,7 +130,7 @@ PWD = /home/ratan/devel/c/sturdy-octo-doodle
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 3275
+SSH_AGENT_PID = 3100
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -171,7 +172,7 @@ CC = gcc
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-bab83c5b-df84-4041-a156-7664c5813442.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b7f0133e-e5c1-4274-bce0-c7d7225c48f8.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -233,9 +234,9 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LANG = C
 # environment
-VSCODE_PID = 15862
+VSCODE_PID = 14855
 # variable set hash-table stats:
-# Load=112/1024=11%, Rehash=0, Collisions=17/147=12%
+# Load=112/1024=11%, Rehash=0, Collisions=17/141=12%
 
 # Pattern-specific Variable Values
 
@@ -243,9 +244,9 @@ VSCODE_PID = 15862
 
 # Directories
 
-# . (device 64769, inode 9583375): 21 files, no impossibilities.
+# . (device 64769, inode 9583375): 26 files, no impossibilities.
 
-# 21 files, no impossibilities in 1 directories.
+# 26 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -255,8 +256,9 @@ VSCODE_PID = 15862
 
 levelselector.o: main.c splash.c levelselector.c levels.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2022-05-18 00:49:23.261078201
+#  File has been updated.
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 19):
 	$(CC) -c $(SOURCES) $(CFLAGS)
 
@@ -266,9 +268,7 @@ all: game
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+#  Successfully updated.
 
 .PHONY: all clean
 #  Implicit rule search has not been done.
@@ -278,21 +278,14 @@ all: game
 # Not a target:
 main.c:
 #  Implicit rule search has been done.
- 
-#  Last modified 2022-05-17 01:57:43.057836567
+#  Last modified 2022-05-17 13:18:57.692489716
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
-.SUFFIXES:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-17 02:10:44.809831525
+#  Last modified 2022-05-18 00:49:14.537023623
 #  File has been updated.
 #  Successfully updated.
 
@@ -305,8 +298,9 @@ splash.c:
 
 levels.o: main.c splash.c levelselector.c levels.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2022-05-18 00:49:23.313078522
+#  File has been updated.
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 19):
 	$(CC) -c $(SOURCES) $(CFLAGS)
 
@@ -326,7 +320,7 @@ levelselector.c:
 # Not a target:
 levels.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-17 02:10:17.459492236
+#  Last modified 2022-05-17 13:18:42.944540656
 #  File has been updated.
 #  Successfully updated.
 
@@ -339,51 +333,32 @@ clean:
 	$(RM) *~ *.o $(TARGET)
 
 game: main.o splash.o levelselector.o levels.o
+ 
 #  Implicit rule search has not been done.
-#  File does not exist.
+#  Last modified 2022-05-18 00:49:23.397079041
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 16):
 	$(CC) -o $(TARGET) $(OBJ) $(LDFLAGS)
 
 main.o: main.c splash.c levelselector.c levels.c
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  File does not exist.
+#  Last modified 2022-05-18 00:49:23.145077486
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := main.o
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := main.c splash.c levelselector.c levels.c
-# automatic
-# | := 
-# automatic
-# < := main.c
-# automatic
-# ^ := main.c splash.c levelselector.c levels.c
-# automatic
-# ? := main.c splash.c levelselector.c levels.c
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=3/14=21%
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 19):
 	$(CC) -c $(SOURCES) $(CFLAGS)
 
 splash.o: main.c splash.c levelselector.c levels.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2022-05-18 00:49:23.197077806
+#  File has been updated.
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 19):
 	$(CC) -c $(SOURCES) $(CFLAGS)
 
 # files hash-table stats:
-# Load=15/1024=1%, Rehash=0, Collisions=0/45=0%
+# Load=15/1024=1%, Rehash=0, Collisions=0/44=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -393,9 +368,9 @@ splash.o: main.c splash.c levelselector.c levels.c
 # strcache buffers: 1 (0) / strings = 33 / storage = 308 B / avg = 9 B
 # current buf: size = 8162 B / used = 308 B / count = 33 / avg = 9 B
 
-# strcache performance: lookups = 60 / hit rate = 45%
+# strcache performance: lookups = 64 / hit rate = 48%
 # hash-table stats:
-# Load=33/8192=0%, Rehash=0, Collisions=1/60=2%
-# Finished Make data base on Tue May 17 02:10:46 2022
+# Load=33/8192=0%, Rehash=0, Collisions=1/64=2%
+# Finished Make data base on Wed May 18 00:49:33 2022
 
  

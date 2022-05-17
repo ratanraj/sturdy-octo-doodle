@@ -8,6 +8,7 @@
 #include "conf.h"
 #include "splash.h"
 #include "levelselector.h"
+#include "levels.h"
 
 
 int main()
@@ -42,12 +43,12 @@ int main()
     al_start_timer(timer);
     float x=0;
 
-    //load_splash_screen(queue);  /* SPLASH SCREEN */
+    load_splash_screen(queue);  /* SPLASH SCREEN */
 
-    //current_level = select_level(queue); /* LEVEL SELECTOR */
+    current_level = select_level(queue); /* LEVEL SELECTOR */
 
     printf("LEVEL = %d\n", current_level);/* LOAD LEVEL */
-    
+    load_level(current_level);
 
     while(1) {
         al_wait_for_event(queue, &event);
