@@ -1,6 +1,5 @@
 import pygame
 from pygame.locals import *
-import ui
 
 class Game():
     def __init__(self) -> None:
@@ -27,18 +26,13 @@ class Game():
 
     def level_selector(self):
         running = True
-        self.n=0
-        def foo():
-            print(f"Button clicked {self.n}")
-            self.n=self.n+1
         while running:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     running = False
                 elif event.type ==MOUSEBUTTONUP:
                     mouse_x, mouse_y = event.pos
-                    ui.button(self.screen, (300, 300, 100, 50), "Hello", event, foo)
-            
+
             pygame.display.update()
             self.fpsClock.tick(12)
 
