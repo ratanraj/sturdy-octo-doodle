@@ -1,9 +1,0 @@
-{
-    "levels": [
-        {
-            "id": 1,
-            "name": "The Beggining",
-            "background": "maps/level1.png"
-        }
-    ]
-}
